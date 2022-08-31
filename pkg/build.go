@@ -46,6 +46,7 @@ func runBuild(cmd *cobra.Command) (err error) {
 		Dockerfile: "Dockerfile.test",
 		Tags:       []string{"test"},
 		Version:    types.BuilderBuildKit,
+		PullParent: true,
 		Target:     "output",
 		Outputs: []types.ImageBuildOutput{{
 			Type: "local",

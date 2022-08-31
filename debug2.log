@@ -1,0 +1,40 @@
+DEBU[2022-08-31T18:56:33.327498895-03:00] Calling POST /v1.41/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile.test&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&shmsize=0&target=output&ulimits=null&version=1 
+DEBU[2022-08-31T18:56:33.408783753-03:00] [BUILDER] Cache miss: [/bin/sh -c #(nop) WORKDIR /tmp/test] 
+DEBU[2022-08-31T18:56:33.409298281-03:00] [BUILDER] Command to be executed: [/bin/sh -c #(nop) WORKDIR /tmp/test] 
+DEBU[2022-08-31T18:56:33.455926119-03:00] container mounted via layerStore: &{/var/lib/docker/overlay2/76afd7a2cea131e4a9485adf679c39ea5bbb4d7ee8f59bba0020af5607ef6621/merged 0x5571efcd7da0 0x5571efcd7da0}  container=48db57f280e6411426dfb7270be624b3c066b5de122e2918a09ce70bc4296e74
+DEBU[2022-08-31T18:56:33.489928686-03:00] container mounted via layerStore: &{/var/lib/docker/overlay2/76afd7a2cea131e4a9485adf679c39ea5bbb4d7ee8f59bba0020af5607ef6621/merged 0x5571efcd7da0 0x5571efcd7da0}  container=48db57f280e6411426dfb7270be624b3c066b5de122e2918a09ce70bc4296e74
+DEBU[2022-08-31T18:56:33.508932431-03:00] Tar with options on /var/lib/docker/overlay2/76afd7a2cea131e4a9485adf679c39ea5bbb4d7ee8f59bba0020af5607ef6621/diff  storage-driver=overlay2
+DEBU[2022-08-31T18:56:33.509432467-03:00] Applying tar in /var/lib/docker/overlay2/a2ca1e5ea5190b93cb1ed015c8278fee6e874696839aba9744ab08e8dfd2c510/diff  storage-driver=overlay2
+DEBU[2022-08-31T18:56:33.614293877-03:00] Applied tar sha256:20a8ce561458e9abc2454cd2cde56169e5fe65763135570b0ae249f9e7e1226e to a2ca1e5ea5190b93cb1ed015c8278fee6e874696839aba9744ab08e8dfd2c510, size: 0 
+DEBU[2022-08-31T18:56:33.653870303-03:00] [BUILDER] Command to be executed: [/bin/sh -c mkdir out && cd out && touch test.txt] 
+DEBU[2022-08-31T18:56:33.707218506-03:00] container mounted via layerStore: &{/var/lib/docker/overlay2/6de23af3f1cf9d5ab84a8f6b8145d771144c1d4513c922dc601547e2a299afc2/merged 0x5571efcd7da0 0x5571efcd7da0}  container=2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74
+DEBU[2022-08-31T18:56:33.726571984-03:00] container mounted via layerStore: &{/var/lib/docker/overlay2/6de23af3f1cf9d5ab84a8f6b8145d771144c1d4513c922dc601547e2a299afc2/merged 0x5571efcd7da0 0x5571efcd7da0}  container=2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74
+DEBU[2022-08-31T18:56:33.726946118-03:00] Assigning addresses for endpoint laughing_brown's interface on network bridge 
+DEBU[2022-08-31T18:56:33.727008196-03:00] RequestAddress(LocalDefault/172.17.0.0/16, <nil>, map[]) 
+DEBU[2022-08-31T18:56:33.727060597-03:00] Request address PoolID:172.17.0.0/16 App: ipam/default/data, ID: LocalDefault/172.17.0.0/16, DBIndex: 0x0, Bits: 65536, Unselected: 65533, Sequence: (0xc0000000, 1)->(0x0, 2046)->(0x1, 1)->end Curr:0 Serial:false PrefAddress:<nil>  
+DEBU[2022-08-31T18:56:33.731444221-03:00] attach: stdout: begin                        
+DEBU[2022-08-31T18:56:33.731500170-03:00] attach: stderr: begin                        
+DEBU[2022-08-31T18:56:33.769092330-03:00] Assigning addresses for endpoint laughing_brown's interface on network bridge 
+DEBU[2022-08-31T18:56:33.790595555-03:00] Programming external connectivity on endpoint laughing_brown (2d7080eac3a433f697fa3313dbb8699b5dfe37c5ca0bbe49b719c947b0006051) 
+DEBU[2022-08-31T18:56:33.801215234-03:00] EnableService 2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74 START 
+DEBU[2022-08-31T18:56:33.801301086-03:00] EnableService 2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74 DONE 
+DEBU[2022-08-31T18:56:33.805480698-03:00] bundle dir created                            bundle=/var/run/docker/containerd/2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74 module=libcontainerd namespace=moby root=/var/lib/docker/overlay2/6de23af3f1cf9d5ab84a8f6b8145d771144c1d4513c922dc601547e2a299afc2/merged
+DEBU[2022-08-31T18:56:34.031813939-03:00] sandbox set key processing took 84.040615ms for container 2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74 
+DEBU[2022-08-31T18:56:34.065021292-03:00] event                                         module=libcontainerd namespace=moby topic=/tasks/create
+DEBU[2022-08-31T18:56:34.083978075-03:00] event                                         module=libcontainerd namespace=moby topic=/tasks/start
+DEBU[2022-08-31T18:56:34.084123264-03:00] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2022-08-31T18:56:34.097280222-03:00] event                                         module=libcontainerd namespace=moby topic=/tasks/delete
+INFO[2022-08-31T18:56:34.097305511-03:00] ignoring event                                container=2ae5b37a25ac694a81892674cdab0d81a8c07feeb118187b94a69f182a3fdf74 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+DEBU[2022-08-31T18:56:34.114898582-03:00] Revoking external connectivity on endpoint laughing_brown (2d7080eac3a433f697fa3313dbb8699b5dfe37c5ca0bbe49b719c947b0006051) 
+DEBU[2022-08-31T18:56:34.117145616-03:00] DeleteConntrackEntries purged ipv4:0, ipv6:0 
+DEBU[2022-08-31T18:56:34.117934178-03:00] attach: stderr: end                          
+DEBU[2022-08-31T18:56:34.117976814-03:00] attach: stdout: end                          
+DEBU[2022-08-31T18:56:34.118042292-03:00] attach done                                  
+DEBU[2022-08-31T18:56:34.176028497-03:00] Releasing addresses for endpoint laughing_brown's interface on network bridge 
+DEBU[2022-08-31T18:56:34.176319767-03:00] ReleaseAddress(LocalDefault/172.17.0.0/16, 172.17.0.2) 
+DEBU[2022-08-31T18:56:34.176389565-03:00] Released address PoolID:LocalDefault/172.17.0.0/16, Address:172.17.0.2 Sequence:App: ipam/default/data, ID: LocalDefault/172.17.0.0/16, DBIndex: 0x0, Bits: 65536, Unselected: 65532, Sequence: (0xe0000000, 1)->(0x0, 2046)->(0x1, 1)->end Curr:3 
+DEBU[2022-08-31T18:56:34.263005733-03:00] Tar with options on /var/lib/docker/overlay2/6de23af3f1cf9d5ab84a8f6b8145d771144c1d4513c922dc601547e2a299afc2/diff  storage-driver=overlay2
+DEBU[2022-08-31T18:56:34.263575283-03:00] Applying tar in /var/lib/docker/overlay2/ec6052a0089bd430860129589150eaf1eab78fe2caecd5d54aefe09398116d17/diff  storage-driver=overlay2
+DEBU[2022-08-31T18:56:34.371062141-03:00] Applied tar sha256:13e82599ad3f5752ec3c966df87cb637574af3ddedb99d049c65a46505ab14cb to ec6052a0089bd430860129589150eaf1eab78fe2caecd5d54aefe09398116d17, size: 0 
+DEBU[2022-08-31T18:56:34.426519279-03:00] [BUILDER] Use cached version: [/bin/sh -c #(nop) COPY dir:9c841be97f3420281249eda8579b4ea376fd4b5d19fccd40126eed0daa8a13a1 in . ] 
+
