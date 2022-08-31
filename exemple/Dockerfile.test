@@ -1,0 +1,6 @@
+FROM alpine as builder
+WORKDIR /tmp/test
+RUN mkdir out && cd out && touch test.txt
+
+FROM scratch as output
+COPY --from=builder /tmp/test/out .
